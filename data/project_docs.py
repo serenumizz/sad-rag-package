@@ -1,7 +1,7 @@
 """
 Knowledge-base documents for the SAD (Seasonal Affective Disorder) RAG project.
 
-These are derived from Yusri Ilza Sania's NYU "Dealing with Data" final project
+These are derived from Yusri Ilza Sania's final project
 notebook: "Temperature and Light Effects on Mood Trends" (Reddit sentiment vs.
 NYC weather, Jan 1 - May 9, 2025).
 
