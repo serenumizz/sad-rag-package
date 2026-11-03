@@ -91,10 +91,3 @@ Tool-use:   5/6 passed
 > function-calling tool step for live SQL queries against the real data and
 > an automated evaluation harness scoring both the retrieval and tool-use
 > paths.
-
-## Note on the source notebook
-
-The original notebook (`Yusri_Ilza_Sania_dataproject01_dwd_spring20 (5).ipynb`)
-has a plaintext OpenAI API key hardcoded in one of its cells. If that key is
-still active, revoke/rotate it in the OpenAI dashboard — it should never be
-committed or shared as-is.
