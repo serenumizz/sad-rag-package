@@ -1,0 +1,180 @@
+=== Cell 0 ===
+# **Temperature and Light Effects on Mood Trends**
+
+=== Cell 1 ===
+by Yusri Ilza Sania (ys7255)
+
+
+=== Cell 2 ===
+## Project objective:
+To analyse the correlation between Mood or sentiment and the weather (temperature and light instensity)
+
+=== Cell 3 ===
+## Data overview:
+Data source :
+
+
+1.   Reddit     : https://api.pullpush.io/reddit/search
+2.   Open-Meteo : https://archive-api.open-meteo.com/v1/archive
+
+Analysis :  
+
+1.   Sentiment Analysis  : NLU by Google Cloud Platform
+2.   Analysis            : OpenAI API
+
+Year : Jan,1 2025 - May, 9 2025
+
+Number of observations : ~87k
+
+=== Cell 4 ===
+## Quick Start
+Recommended for presentation and grading
+
+To avoid long processing time (API fetching and analysis can take hours), you can use the pre-processed dataset provided in Google Drive.
+1.   Download the data from this [link](https://drive.google.com/drive/folders/163O2dUoFld2QDZzt9qin72FAvbJHl_mZ?usp=drive_link)
+2.   Upload the downloaded file(s) directly into the Colab /content folder:
+
+      a. Click the folder icon on the left panel in Colab
+      
+      b. Click Upload
+      
+      c. Select the file(s)
+
+3.   Once uploaded, you can load the data directly
+
+=== Cell 5 ===
+## D1. Library imports
+
+=== Cell 8 ===
+##D2. Data pre-processing
+
+=== Cell 9 ===
+### Configuration
+
+=== Cell 11 ===
+Convert time
+
+=== Cell 13 ===
+### Fetch Reddit Data
+
+=== Cell 15 ===
+### Cleansing Reddit Data
+For presentation or quick checking, please use existing file instead since this process takes some times
+
+=== Cell 18 ===
+### Sentiment Analysis NLU
+
+=== Cell 23 ===
+### Fetch Open-Meteo API
+
+=== Cell 25 ===
+Fetch Weather Data
+
+=== Cell 27 ===
+### Combine Data
+
+=== Cell 29 ===
+## D3. Data analysis
+
+
+=== Cell 30 ===
+### Question 1
+As temperature increases from winter to spring, does sentiment improve?
+
+=== Cell 31 ===
+#### Answer : The sentiment trends increase along with the increasing of the temperature (look at the chart below)
+
+=== Cell 32 ===
+#### Plot
+
+=== Cell 34 ===
+#### Download
+
+=== Cell 36 ===
+### Question 2
+As light intensity increases, does sentiment improve?
+
+
+=== Cell 37 ===
+#### Answer : The sentiment trends increase along with the increasing of the light intensity (look at the chart below)
+
+=== Cell 38 ===
+#### Plot
+
+=== Cell 40 ===
+#### Download
+
+=== Cell 42 ===
+### Question 3
+What is the average temperature when the emotional score is above 0?
+
+=== Cell 43 ===
+#### Answer : 9.964444444444444
+
+=== Cell 45 ===
+### Question 4
+What is the average temperature when the emotional score is below 0?
+
+=== Cell 46 ===
+#### Answer : 2.985714285714286
+
+=== Cell 48 ===
+### Question 5
+What is the average emotional score between periode Jan, 1 2025 and May, 9 2025?
+
+=== Cell 49 ===
+#### Answer : -0.01102125596275067
+
+=== Cell 51 ===
+## Write Analysis Report
+
+=== Cell 52 ===
+### Convert chart from image to base64
+
+=== Cell 54 ===
+### Generate Introduction using OpenAI
+
+=== Cell 56 ===
+### Generate Summary using OpenAI
+
+=== Cell 58 ===
+### Generate Conclusion using OpenAI
+
+=== Cell 60 ===
+### Generate Title using OpenAI
+
+=== Cell 62 ===
+### Generate Report as HTML
+
+=== Cell 64 ===
+##D4. Summary of key findings
+
+=== Cell 65 ===
+The data covers the period from January 1 to May 9, 2025 in New York, and looks at how temperature and light intensity relate to emotional (sentiment) scores a core question in understanding Seasonal Affective Disorder.
+
+**1. Warmer weather links to better mood.**
+
+  When the emotional score was positive (above 0), the average temperature was around 9.96°C. When the emotional score was negative (below 0), the average temperature dropped to just 2.99°C. That's a difference suggesting that colder conditions tend to align with lower emotional states.
+
+**2. Overall mood leaned slightly negative across the study period.**
+
+The average emotional score from January to May 2025 was -0.011, sitting just below neutral. This is consistent with SAD patterns, where the start of the year in New York which is the coldest months tends to suppress emotional wellbeing before gradually recovering into spring.
+
+**3. Both light and temperature rise as sentiment improves.**
+
+The charts show that shortwave radiation (light intensity) and temperature both trend upward from January through May. Sentiment scores follow a similar direction, becoming less volatile and more consistently positive by April–May. This points to a seasonal recovery pattern that mirrors more daylight and warmth.
+
+=== Cell 66 ===
+##D5 Further research
+
+=== Cell 67 ===
+**1. Lag effect analysis**
+It needs further testing for time-lag correlation between temperature/light and sentiment to reveal whether the body needs time to adjust. Does mood improve immediately with better weather, or is there a delay of a few days or weeks?
+
+**2. Extending the dataset**
+The study ends in early May. Tracking through summer and back into winter would allow a full seasonal cycle analysis and stronger conclusions about the SAD pattern.
+
+**3. Negative sentiment outliers**
+There are sharp dips in sentiment even during warmer months (visible in May). Understanding what causes these short-term mood drops could reveal that SAD isn't purely environmental.
+
+
