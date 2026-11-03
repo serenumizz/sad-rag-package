@@ -1,6 +1,6 @@
 # Ask My SAD Project — RAG + Tool Use + Eval
 
-Grounded Q&A over my final project — *Temperature and
+*Temperature and
 Light Effects on Mood Trends* (Reddit sentiment in r/nyc vs. NYC weather,
 Jan 1 – May 9 2025, ~87.7k scored posts), built as a lens on Seasonal
 Affective Disorder (SAD).
